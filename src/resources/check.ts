@@ -1,6 +1,6 @@
 import { readJson } from "../decode.js";
 import type { Operation } from "../operation.js";
-import type { ConfidenceRange, IntRange } from "../types/ConfidenceTypes.js";
+import type { ConfidenceRange, InRange } from "../types/ConfidenceTypes.js";
 import type { IpV4, IpV6 } from "../types/IpAddressTypes.js";
 
 export interface Report {
@@ -35,9 +35,9 @@ interface CheckEnvelope {
 	readonly data: CheckResponse;
 }
 
-export const getCheck = (
+export const getCheck = <A extends number>(
 	ip: IpV4 | IpV6,
-	maxAgeInDays?: IntRange<1, 365>,
+	maxAgeInDays?: InRange<A, 1, 365>,
 	verbose?: boolean
 ): Operation<CheckResponse> => {
 	return {
