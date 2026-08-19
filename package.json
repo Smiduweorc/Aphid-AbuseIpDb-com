@@ -1,6 +1,6 @@
 {
 	"name": "@Smiduweorc/AphidTemplate",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "TypeScript skeleton for typed API wrappers: describe endpoints, send them through an injected transport.",
 	"type": "module",
 	"sideEffects": false,
