@@ -1,5 +1,5 @@
 {
-	"name": "aphid-abuseipdb-com",
+	"name": "aphid-abuseipdbv2-com",
 	"version": "1.0.0",
 	"description": "TypeScript skeleton for typed API wrappers: describe endpoints, send them through an injected transport.",
 	"type": "module",
